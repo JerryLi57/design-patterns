@@ -9,6 +9,7 @@ public class UserA implements Observer {
 
     private String message;
 
+    @Override
     public void update(String message) {
         this.message = message;
         read();

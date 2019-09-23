@@ -14,6 +14,7 @@ public class WechatServer implements Observerable {
 
     private String message;
 
+    @Override
     public void registerObserver(Observer o) {
         observers.add(o);
     }
