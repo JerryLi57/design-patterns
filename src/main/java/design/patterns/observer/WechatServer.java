@@ -19,12 +19,14 @@ public class WechatServer implements Observerable {
         observers.add(o);
     }
 
+    @Override
     public void removeObserver(Observer o) {
         if(!observers.isEmpty()){
             observers.remove(o);
         }
     }
 
+    @Override
     public void notifyObserver() {
         for(Observer item : observers){
             item.update(this.message);
